@@ -1,21 +1,32 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts" setup>
+import TheTape from "./components/TheTape.vue";
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-</template>
+  <div class="min-h-full">
+    <nav class="bg-white border-b border-gray-200">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex">
+            <div class="flex items-center flex-shrink-0">
+              <h1 class="text-3xl font-bold leading-tight text-gray-900">
+                Turing
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    <div class="py-10">
+      <main>
+        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="px-4 py-8 space-y-10 sm:px-0">
+            <TheTape />
+            <p>Controls</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</template>
